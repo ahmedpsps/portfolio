@@ -1,0 +1,287 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background-color: #000000;
+  height: 800px;
+}
+
+.header {
+  background-color: #000000;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 9%;
+  align-items: center;
+
+  color: #000000;
+ 
+  margin-bottom: 10px;
+}
+
+.nav__list {
+  margin-left: 4rem;
+  font-weight: 600;
+  transition: 0.1s;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  border-bottom: #000000 4px solid;
+}
+.nav__list:hover {
+  border-bottom: 4px solid #b74b4b;
+  color: #b74b4b;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 27px;
+}
+.active {
+  border-bottom: #b74b4b 4px solid;
+  color: #b74b4b;
+}
+.logo {
+  color: #b74b4b;
+  transition: 0.2s linear;
+  font-weight: 600;
+  font-size: 25px;
+  background-image: linear-gradient(to right,#ea9696, #b74b4b);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color: transparent;
+  animation: logo 60s linear infinite;
+}
+@keyframes logo {
+  to {
+    background-position: 4500px;
+  }
+}
+
+.about__contact {
+  margin-bottom: 40px;
+  color: white;
+  text-shadow: 0px 0px 30px #b74b4b, 0px 0px 30px #b74b4b;
+  text-align: center;
+  padding: 10px;
+  font-size: 60px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+input {
+  border: none;
+  color: white;
+  background-color: #1a1a1d;
+  width: 30%;
+  font-size: 20px;
+  padding: 25px 16px;
+  border-radius: 10px;
+  border-color: #1a1a1d;
+  margin-bottom: 40px;
+ -webkit-box-shadow:0px 0px 18px 0px #b74b4b inset;
+-moz-box-shadow:0px 0px 18px 0px #b74b4b inset;
+box-shadow:0px 0px 18px 0px #b74b4b inset;
+  transition: 0.8s;
+}
+input[type="text"]::placeholder {
+  color: #c5c3c3;
+  opacity: 1;
+  font-size: 20px;
+  padding-left:20px;
+  ;
+}
+
+
+input[type="email"]::placeholder {
+  color: #c5c3c3;
+  opacity: 1;
+  font-size: 20px;
+  padding-left: 20px;
+}
+input[type="email"] {
+  width: 28%;
+}
+input:hover {
+  transform: scale(1.11);
+}
+textarea {
+  background-color: #1a1a1d;
+  -webkit-box-shadow:0px 0px 18px 0px #b74b4b inset;
+-moz-box-shadow:0px 0px 18px 0px #b74b4b inset;
+box-shadow:0px 0px 18px 0px #b74b4b inset;
+  width: 24%;
+  font-size: 20px;
+  padding: 16px 10px;
+  padding-left: 40px;
+  border-radius: 10px;
+  border: none;
+  color: #c5c3c3;
+  opacity: 1;
+  font-size: 20px;
+  margin-bottom: 30px;
+  transition: 0.8s;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+textarea:hover {
+  transform: scale(1.1);
+}
+input:focus-within {
+  outline: none;
+  /* border-color: #a64d79; */
+  /* border-width:3px ; */
+  
+  
+  
+}
+textarea:focus-within {
+  outline: none;
+  color: white;
+  font-size: 20px;
+  padding: 16px 10px;
+  padding-left: 40px;
+  border-color: #b74b4b;
+  /* border-width:3px ;    */
+}
+button {
+  all: unset;
+  margin-top: 20px;
+  border: #b74b4b 3px solid;
+  border-radius: 50px;
+  padding: 1rem 2.8rem;
+  color: #b74b4b;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: Impact "Times New Roman", Times, serif;
+  transition: 0.2s linear;
+}
+button:hover {
+  box-shadow: 0 0 20px 0px #b74b4b;
+  background-color: #b74b4b;
+  color: #000000;
+}
+
+@media (max-width: 1000px) {
+  .main__2 {
+    gap: 50px;
+  }
+  .main__2 {
+    /* padding: 0px 50px; */
+    margin-left: 0px;
+  }
+  .about__main {
+    margin-left: 10px;
+  }
+}
+@media (max-width: 995px) {
+  .main__2 {
+    flex-direction: column;
+    padding: 0px;
+    margin-bottom: 0px;
+  }
+  .about__contact {
+    font-size: 30px;
+  }
+  .input {
+    width: 300px;
+  }
+  input[type="email"] {
+    width: 300px;
+  
+  }
+  textarea {
+    width: 280px;
+  }
+  button {
+    font-size: 15px;
+  }
+  .main__2 .about__main h3 {
+    font-size: 1.5rem;
+  }
+
+  .about__main h1 {
+    font-size: 2rem;
+    /* margin-left: 10px; */
+  }
+  .p3 {
+    font-size: 14px;
+  }
+  .img {
+    width: 80%;
+    position: relative;
+    top: 20px;
+    left: 5%;
+    margin-bottom: 20px;
+    background-color: #000000;
+    box-shadow: none;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav {
+    margin-top: 10px;
+  }
+
+  .nav__list {
+    margin-left: 10px;
+    font-size: 15px;
+  }
+  .project__crad {
+    display: flex;
+    flex-direction: column;
+  }
+.input{
+  height: 5px;
+}
+input[type="email"]{
+  height: 5px;
+}
+input[type="text"]::placeholder {
+  
+  font-size: 15px;
+}
+
+
+input[type="email"]::placeholder {
+ font-size: 15px;
+}
+
+textarea::placeholder{
+  font-size: 15px;
+}
+
+}
+@media (max-width: 375px) {
+  .nav {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 344px) {
+  .nav {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .nav {
+    margin-top: 10px;
+    font-size: 10px;
+  }
+  .img {
+    margin-bottom: 20px;
+  }
+}
+
+
