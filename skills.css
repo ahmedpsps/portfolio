@@ -75,11 +75,10 @@ a {
   color: #b74b4b;
 }
 .about__card {
-  color: #ffffff;
+  color: #b74b4b;
   font-size: 28px;
 }
-.p__card {
-  color: #b74b4b;
+
 }
 .pro__Card {
   display: flex;
@@ -126,7 +125,7 @@ a {
   animation: slide-top 1s alternate linear infinite both;
 }
 .p__card {
-  color: white;
+  color: #b74b4b;
   font-size: 20px;
   font-weight: bold;
 }
