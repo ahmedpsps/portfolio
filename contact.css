@@ -224,7 +224,7 @@ button:hover {
     background-color: #000000;
     box-shadow: none;
   }
-  a{
+  .nav__list{
     font-size: 13px; 
   }
 
